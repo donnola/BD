@@ -37,13 +37,15 @@ create table storages.employee (
 
 create table storages.client_with_order (
   client_id int,
+  first_name varchar(50),
+  last_name varchar(50),
   address varchar(100),
   telephone_number varchar(50),
   email varchar(50)
 );
 
 create table storages.pickup_point (
-  pickup_poin_id int,
+  pickup_point_id int,
   address varchar(100),
   telephone_number varchar(50),
   email varchar(50)
