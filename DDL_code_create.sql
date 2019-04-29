@@ -13,7 +13,8 @@ create table storages.order (
   order_notes varchar(200),
   client_id int,
   status varchar(50),
-  storage_id int
+  storage_id int,
+  pickup_point_id int
 );
 
 create table storages.product (
