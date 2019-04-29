@@ -47,3 +47,17 @@ having sum(a.price*a.quantity_of_product) >=
          from products_in_order join product
          on products_in_order.product_id = product.product_id
          group by order_id) a);
+
+-- выведите ID самых популярных у клиентов продуктов, их названия и цену
+Select distinct products_in_order.product_id, product.name, product.price
+from products_in_order join product
+on products_in_order.product_id = product.product_id
+group by products_in_order.product_id, product.name, product.price
+having count(products_in_order.product_id) =(
+  Select max(cnt)
+  from (
+    Select count(products_in_order.product_id) as cnt
+    from products_in_order
+    group by products_in_order.product_id
+    ) a
+);
