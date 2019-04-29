@@ -19,7 +19,7 @@ insert into product (product_id, name, price)
   (837932, 'електроплитка', 2500),
   (472910, 'вафельница', 4300);
 
-insert into pickup_point (pickup_poin_id, address, telephone_number, email)
+insert into pickup_point (pickup_point_id, address, telephone_number, email)
   values
   (35, 'Москва, Мурманский проезд, 12', '+7(495)395-29-50', '1pickup@mail.ru'),
   (23, 'Москва, Писцовая улица, 15', '+7(495)492-39-20', '2pickup@mail.ru'),
