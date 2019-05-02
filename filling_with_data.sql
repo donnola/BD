@@ -1,4 +1,4 @@
-insert into storage (storage_id, telephone_number, address, email)
+insert into storage (storage_id, telephone_number_no, address_desc, email_txt)
   values
   (1, '+7(495)893-20-29', 'Москва, Мичуринский проспект, 11к3', 'first_storage@mail.ru'),
   (2, '+7(499)468-15-85', 'Москва, 5-я улица Соколиной Горы, 25к4, 11к3', 'second_storage@mail.ru'),
@@ -6,7 +6,7 @@ insert into storage (storage_id, telephone_number, address, email)
   (4, '+7(495)753-32-85', 'Москва, улица Сущёвский Вал, 31с2', 'fourth_storage@mail.ru'),
   (5, '+7(495)146-97-30', 'Москва, Шарикоподшипниковская улица, 3', 'fifth_storage@mail.ru');
 
-insert into product (product_id, name, price)
+insert into product (product_id, name_nm, price_amt)
   values
   (137853, 'чайник', 2000),
   (938602, 'тостер', 3000),
@@ -19,7 +19,7 @@ insert into product (product_id, name, price)
   (837932, 'електроплитка', 2500),
   (472910, 'вафельница', 4300);
 
-insert into pickup_point (pickup_point_id, address, telephone_number, email)
+insert into pickup_point (pickup_point_id, address_desc, telephone_number_no, email_txt)
   values
   (35, 'Москва, Мурманский проезд, 12', '+7(495)395-29-50', '1pickup@mail.ru'),
   (23, 'Москва, Писцовая улица, 15', '+7(495)492-39-20', '2pickup@mail.ru'),
@@ -32,7 +32,7 @@ insert into pickup_point (pickup_point_id, address, telephone_number, email)
   (27, 'Москва, Полярная улица, 25к2', '+7(495)245-86-35', '9pickup@mail.ru'),
   (86, 'Москва, улица Крылатские Холмы, 27к3', '+7(495)352-75-24', '10pickup@mail.ru');
 
-insert into employee (employee_id, first_name, last_name, position, storage_id, leader, salary, telephone_number, email)
+insert into employee (employee_id, first_name_nm, last_name_nm, position_desc, storage_id, leader_desc, salary_amt, telephone_number_no, email_txt)
   values
   (937833, 'Александр', 'Буш', 'сборщик заказа', 1, 'Y', 50000, '+7(909)395-28-59', 'Bush@mail.ru'),
   (593024, 'Аркадий', 'Тараканов', 'сборщик заказа', 1, 'N', 20000, '+7(935)245-46-24', 'BuBuBu@mail.ru'),
@@ -45,7 +45,7 @@ insert into employee (employee_id, first_name, last_name, position, storage_id, 
   (058372, 'Мишель', 'Котова', 'сборщик заказа', 5, 'Y', 40000, '+7(943)763-27-24', 'Cat@mail.ru'),
   (058372, 'Константин', 'Петров', 'сборщик заказа', 5, 'N', 24000, '+7(964)923-74-27', 'Bone@mail.ru');
 
-insert into "order" (order_id, order_notes, client_id, status, storage_id, pickup_point_id)
+insert into "order" (order_id, order_notes_txt, client_id, status_desc, storage_id, pickup_point_id)
   values
   (104394, '', 01, 'собирается', '1', 35),
   (103928, '', 02, 'в пути', '2', 30),
@@ -58,7 +58,7 @@ insert into "order" (order_id, order_notes, client_id, status, storage_id, picku
   (068383, '', 09, 'собирается', '3', 12),
   (674932, '', 10, 'собирается', '4', 19);
 
-insert into client_with_order (client_id, first_name, last_name, address, telephone_number, email)
+insert into client_with_order (client_id, first_name_nm, last_name_nm, address_desc, telephone_number_no, email_txt)
   values
   (01, 'Людмила', 'Маркова', 'Москва, ул Красногвардейская, 5', '+7(904)245-75-36', '1client@mail.ru'),
   (02, 'Евгений', 'Ложкин', 'Москва, ул Мясницкая, 9', '+7(904)246-76-24', '2client@mail.ru'),
@@ -88,7 +88,7 @@ insert into packer_of_position_in_order (order_id, product_id, employee_id)
   (018493, 038284, 104836),
   (018493, 938602, 104836);
 
-insert into products_in_order (order_id, product_id, quantity_of_product)
+insert into products_in_order (order_id, product_id, quantity_of_product_cnt)
   values
   (104394, 038284, 1),
   (104394, 749204, 1),
@@ -105,7 +105,7 @@ insert into products_in_order (order_id, product_id, quantity_of_product)
   (018493, 038284, 2),
   (018493, 938602, 2);
 
-insert into  products_on_storage (storage_id, product_id, quantity_of_product)
+insert into  products_on_storage (storage_id, product_id, quantity_of_product_cnt)
   values
   (1, 038284, 45),
   (1, 749204, 20),
