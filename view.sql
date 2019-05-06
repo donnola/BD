@@ -22,7 +22,7 @@ from "order" left join pickup_point
 on "order".pickup_point_id = pickup_point.pickup_point_id;
 
 Create or replace view product_view as
-Select product_id, name_nm, price_amt
+Select name_nm, price_amt
 from product;
 
 Create or replace view client_with_order_view as
