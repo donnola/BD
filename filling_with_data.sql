@@ -43,7 +43,7 @@ insert into employee (employee_id, first_name_nm, last_name_nm, position_desc, s
   (948292, 'Анастасия', 'Крим', 'сборщик заказа', 4, 'N', 28000, '+7(909)235-75-23', 'Anka@mail.ru'),
   (395284, 'Денис', 'Копаев', 'сборщик заказа', 4, 'Y', 48000, '+7(909)137-76-34', 'Den@mail.ru'),
   (058372, 'Мишель', 'Котова', 'сборщик заказа', 5, 'Y', 40000, '+7(943)763-27-24', 'Cat@mail.ru'),
-  (058372, 'Константин', 'Петров', 'сборщик заказа', 5, 'N', 24000, '+7(964)923-74-27', 'Bone@mail.ru');
+  (058342, 'Константин', 'Петров', 'сборщик заказа', 5, 'N', 24000, '+7(964)923-74-27', 'Bone@mail.ru');
 
 insert into "order" (order_id, order_notes_txt, client_id, status_desc, storage_id, pickup_point_id)
   values
